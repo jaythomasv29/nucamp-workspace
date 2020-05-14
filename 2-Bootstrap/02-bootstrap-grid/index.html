@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        /* You do not need to change anything in this CSS section. */
+
+        .row div {
+            border: solid lightgreen;
+        }
+
+        #viewport-size {
+            background: lightgreen;
+            padding: 5px;
+        }
+
+        body {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>This viewport size is currently: <span id="viewport-size"></span> <span id="breakpointName"></span></p>
+    <p>Breakpoints: Extra small (default) is &lt; 576 (and up); Small (SM) is ≥ 576px; Medium (MD) is ≥ 768px; Large
+        (LG) is ≥ 992px; Extra Large (XL) is ≥ 1200px.<br />
+        <!-- Below this is the section for you to edit -->
+        <div class="container">
+            <!-- first row -->
+            <div class="row">
+                <div class="col-sm-2 col">
+                    <!-- col-2 works for viewports <576px -->
+                    One
+                </div>
+                <div class="col-sm-2 col">
+                    <!-- col-2 works for viewports <576px - Takes up 2 out of 12 columns -->
+                    Two
+                </div>
+                <div class="col-sm col">
+                    Three
+                </div>
+            </div>
+            <div class="row">
+                <!-- second row -->
+                <div class="col-md col-4">
+                    Four
+                </div>
+                <div class="col-md-6 col-4">
+                    <!-- col-md-6 works for viewports >= 768px - Takes up 6 out of 12 columns -->
+                    Five
+                </div>
+                <div class="col-md col-4">
+                    Six
+                </div>
+            </div>
+            <div class="row">
+                <!-- third row -->
+                <div class="col-lg">
+                    Seven
+                </div>
+                <div class="col-lg">
+                    Eight
+                </div>
+                <div class="col-lg">
+                    Nine
+                </div>
+            </div>
+        </div>
+        <!-- Above this is the section for you to edit -->
+
+        <br />
+
+        <p>Inside the HTML section of this Codepen is the code for a Bootstrap container with three rows, each currently
+            containing three columns of equal width. This Bootstrap container is visible in the white Result section.<p>
+
+                <p>There is a CSS style applied so that you can see the outline of each column in green, just as a
+                    visual aid. The size of your current viewport is also displayed, so that you can easily see when you
+                    are hitting certain breakpoints. To change the viewport size, you can resize the width of the Result
+                    section/resize your browser. (It is not recommended to use the browser developer tools to change the
+                    viewport for this challenge; it will not work well with the Codepen display.)</p>
+
+                <p>Hint: The Codepen linked <a href="https://codepen.io/minae/pen/BaaNEmP?editors=1000"
+                        target="_blank">here</a> contains a small demo that can help you with this challenge.</p>
+
+                <h3>Your Challenge:</h3>
+
+                <ol>
+                    <li>Make sure that you are logged into your Codepen account, or create a Codepen account if you have
+                        not already. Use the "Fork" button in the upper right to create a copy of this code for your own
+                        use. Do not edit the original Codepen, as you will not be able to save your edits.</li>
+                    <li>Edit the classes for the columns in the first row so that when the viewport is SM and up (576px
+                        or higher), the columns with the words "One" and "Two" inside them each span across two (of the
+                        12 possible) columns for their row and the "Three" column spans across the remaining columns for
+                        the same row. For viewports below size SM, the three columns should remain of equal width.</li>
+                    <li>Edit the classes for the columns in the second row so that when the viewport is size MD and up
+                        (768px or higher) the column with the word 'Five' inside it spans across 50% of its row (i.e.
+                        spans 6 columns), and the columns for 'Four' and 'Six' span across the remaining columns equally
+                        (so they both take up 25% each). For viewports that are below size MD, the three columns should
+                        remain of equal width. </li>
+                    <li>Edit the classes for the columns in the third row so that when the viewport is size LG and up
+                        (992 px and higher), the columns remain at equal width as they are now, but for sizes below LG,
+                        the columns stack on top of each other.</li>
+                    <li>Submit the URL of your forked version of this Codepen as your answer to this Code Challenge in
+                        the Nucamp learning portal. </li>
+                </ol>
+                <p>You will only need to change code in the HTML section to complete this challenge, not the CSS or JS
+                    sections.</p>
+                <p>You will not be graded on this challenge. It will be used for class discussion and knowledge
+                    assessment. Please submit your attempt even if it's not working completely.</p>
+
+                <br />
+                <hr />
+
+                <h3>Resources</h3>
+                <ul>
+                    <li>
+                        <a href="https://getbootstrap.com/docs/4.0/layout/grid">Bootstrap documentation: Grid system</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp"
+                            target="_blank">W3Schools - Bootstrap Grid Basic</a></li>
+                </ul>
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                    crossorigin="anonymous"></script>
+
+                    <script>
+                    // You do not need to change anything in this JS section.
+
+viewportSizeSpan = document.getElementById("viewport-size");
+breakpointNameSpan = document.getElementById("breakpointName");
+let bp = "";
+
+// Get and display viewport size on first load of document.
+viewportSizeSpan.textContent = window.innerWidth;
+
+function updateViewportBreakpointDisplay() {
+  // Display the breakpoint name 
+  viewportSizeSpan.textContent = window.innerWidth;
+  switch(true) {
+    case (window.innerWidth >= 1200): bp = "(XL)"; break;
+    case (window.innerWidth >= 992): bp = "(LG)"; break;
+    case (window.innerWidth >= 768): bp = "(MD)"; break;
+    case (window.innerWidth >= 576): bp = "(SM)"; break;
+    default: bp = "(Extra small)"; 
+  }
+  breakpointNameSpan.textContent = bp;
+}
+
+// Add event listener to run displaySize function whenever viewport is resized.
+window.addEventListener("resize", updateViewportBreakpointDisplay);
+                    </script>
+</body>
+
+</html>
